@@ -1,11 +1,12 @@
 type Props = {
   title: string;
+  image: IconType;
 }
 
 export const MenuTitle = (props:Props) => {
   return (
     <div>
-      {/* <img src={img} alt="" /> */}
+      {props.children}
       <p>{props.title}</p>
     </div>
   )
